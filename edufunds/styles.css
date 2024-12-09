@@ -1,0 +1,269 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Centered Container for Forms */
+.login-container, .register-container, .report-container {
+    width: 90%;
+    max-width: 350px;
+    margin: 80px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+.dashboard {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+}
+
+/* Form Labels and Inputs */
+label {
+    margin-top: 15px;
+    font-size: 0.9em;
+    display: block;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+ /* Styles for action menu */
+ .action-menu {
+    position: relative;
+    display: inline-block;
+}
+.action-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.action-dropdown a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.action-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+.dots {
+    cursor: pointer;
+}
+
+/* Sidebar Navigation */
+nav {
+    background-color: #343a40;
+    padding: 15px;
+    width: 220px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    background-color: #495057;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #212529;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 240px; /* Adjust to match the width of the sidebar */
+    padding: 20px;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Budget Section Styling */
+.budget-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right:180px;
+}
+
+.budget-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+ /* Table styling for the transaction history */
+ #transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Styling for the table headers */
+#transactionTable th {
+    background-color: #4CAF50; /* Change to any preferred color */
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+/* Styling for table rows */
+#transactionTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Hover effect for table rows */
+#transactionTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Report Container */
+.report-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.report-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Chart Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .budget-container, .register-container, .login-container, .report-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+    }
+}
